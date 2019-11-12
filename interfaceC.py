@@ -15,8 +15,10 @@ def get_user_input(): # generator function
 
 def main():
     for i , user_input in get_user_input():
-        print(('Out[%d] ' % i) + evac(parse(user_input)))
-    
+        try:
+            print(('Out[%d] ' % i) + evac(parse(user_input)))
+        except:
+            print(('Out[%d] ' % i) + "an error has occurred.")
 
 
 if __name__ == "__main__":

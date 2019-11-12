@@ -1,11 +1,16 @@
 from utl import *
 
+
 class fraction(object):
     def __init__(self,num,den):
         div = gcd(num,den)
         if den != 0 :
-            self.num = num//div
-            self.den = den//div
+            if (den < 0):
+                self.num = -1*num//div
+                self.den = -1*den//div
+            else:
+                self.num = num//div
+                self.den = den//div
         else:
             raise ZeroDivisionError
     def __str__(self):

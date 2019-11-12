@@ -13,7 +13,7 @@ getting_var = lambda foo : "".join([space(i) for i in foo])
 def tokenize(chars : str) -> list:
     "Convert a string of characters into a list of tokens"
     chars = getting_var(chars)
-    return chars.replace('(', '( ').replace(')', ' )').split()
+    return chars.replace('(', '( ').replace(')', ' )').replace('=' , ' = ').split()
 
 def parse(program: str) -> list:
     "Read a scheme expression from a string."
@@ -44,7 +44,7 @@ def atom(token: str) -> Atom:
         except ValueError:
             raise Exception("Invalid faction type")
     else:
-        try : return int(token)
+        try : return fraction(int(token),1)
         except ValueError:
             try: return float(token)
             except ValueError:
