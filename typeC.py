@@ -1,4 +1,12 @@
-from utl import *
+def gcd(a,b):
+    """
+    This a modern implementation of Euclide's algorithm using modulus operator
+    """
+    a =  abs(a)
+    b =  abs(b)
+    while b > 0:
+        a,b = b , a % b
+    return a
 
 
 class fraction(object):
@@ -42,6 +50,13 @@ class fraction(object):
     def __truediv__(self,other):
         if type(other) == type(self):
             return self * other.inverse()
+        else:
+            raise Exception
+    def __add__(self,other):
+        if type(self) == type(other):
+            return fraction(self.num*other.den + other.num*self.den,self.den*other.den)
+        elif(type(other) == type(1)):
+            return fraction(other,1) + self
         else:
             raise Exception
 

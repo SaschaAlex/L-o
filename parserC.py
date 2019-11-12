@@ -1,4 +1,5 @@
 from typeC import *
+from utl import *
 
 Number = (int ,float,fraction)
 Variable = variable
