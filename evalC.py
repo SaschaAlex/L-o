@@ -19,13 +19,11 @@ def evac(parsed : list) -> str:
     Lcoef = addf([ i.coef for i in L if type(i) == type(variable("foo"))])
     Rcoef = addf([ i.coef*-1 for i in R if type(i) == type(variable("foo"))])
     Coef = Lcoef + Rcoef
-    print(Coef)
 
     #Find every value
     Lval = addf([ i*-1 for i in L if type(i) == type(fraction(1,2)) or type(i) == type(1)])
     Rval = addf([ i for i in R if type(i) == type(fraction(1,2)) or type(i) == type(1)])
     Cval = Lval + Rval
-    print(Cval)
 
     #solve
     answer = Coef.inverse()*Cval
