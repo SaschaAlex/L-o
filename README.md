@@ -1,11 +1,11 @@
-# Foosymbol  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Léo  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This is an interpreter for the Foobymbol language 
 
 
 ## Requirements
 * A working version of python 3.6+
 
-## Installation
+## Installation 
 
 
 Clone :
