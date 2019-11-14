@@ -5,6 +5,11 @@ from utl import *
 def evac(parsed : list) -> str:
     "Solve the expresion Ax = b"
 
+    for i in parsed:
+        if type(i) == type(variable('a')):
+            name = i.name 
+            break
+
     for index,value in enumerate(parsed):
         if index < len(parsed)-1:
             if type(value) == type(fraction(1,1)) and type(parsed[index+1]) == type(variable("a")):
@@ -27,6 +32,7 @@ def evac(parsed : list) -> str:
 
     #solve
     answer = Coef.inverse()*Cval
-    return ("{0} = {1}".format("x",answer))
+    return ("{0} = {1}".format(name,answer))
+    
 
 
