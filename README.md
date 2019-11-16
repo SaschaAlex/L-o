@@ -10,7 +10,7 @@ This is an interpreter for the Foobymbol language
 
 Clone :
 ```sh
-git clone https://github.com/SaschaAlex/foorithm
+git clone https://github.com/SaschaAlex/L-o
 python interfaceC.py
 ```
 
@@ -23,7 +23,7 @@ Out[0] x = 74/287
 
 ## Contributing
 
-1. Fork it (<https://github.com/SaschaAlex/foorithm/fork>)
+1. Fork it (<https://github.com/SaschaAlex/L-o/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
