@@ -1,5 +1,5 @@
 # Léo  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-This is an interpreter for the Foobymbol language 
+This is an interpreter for the Léo language 
 
 
 ## Requirements
